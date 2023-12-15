@@ -1,59 +1,65 @@
 import { useState } from "react";
+import member1 from '../assets/people/member-1.png';
+import member2 from '../assets/people/member-2.png';
+import member3 from '../assets/people/member-3.png';
+import member4 from '../assets/people/member-4.png';
+import member5 from '../assets/people/member-5.png';
+import member6 from '../assets/people/member-6.png';
 
 const Members = () => {
   const [members,setMembers] = useState([
     {
       id: 1,
       name: "Emily",
-      img_url: "../src/assets/people/member-6.png",
+      img_url: member6,
       position: "Project Leader",
     },
     {
       id: 2,
       name: "Johnny",
-      img_url: "../src/assets/people/member-1.png",
+      img_url: member1,
       position: "Data Collector",
     },
     {
       id: 3,
       name: "Grace",
-      img_url: "../src/assets/people/member-2.png",
+      img_url: member2,
       position: "Researcher",
     },
     {
       id: 4,
       name: "Author",
-      img_url: "../src/assets/people/member-3.png",
+      img_url: member3,
       position: "UI Designer",
     },
     {
       id: 5,
       name: "Julie",
-      img_url: "../src/assets/people/member-4.png",
+      img_url: member4,
       position: "UI Designer",
     },
     {
       id: 6,
       name: "Auston",
-      img_url: "../src/assets/people/member-5.png",
+      img_url: member5,
       position: "UI Designer",
     },
     {
       id: 7,
       name: "Auston",
-      img_url: "../src/assets/people/member-5.png",
+      img_url: member5,
       position: "UI Designer",
     },
     {
       id: 8,
       name: "Auston",
-      img_url: "../src/assets/people/member-5.png",
+      img_url: member5,
       position: "UI Designer",
     },
     {
       id: 9,
       name: "Auston",
-      img_url: "../src/assets/people/member-5.png",
+      img_url: member5,
       position: "UI Designer",
     },
   ]);

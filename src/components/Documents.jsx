@@ -1,7 +1,6 @@
 import { useState } from "react";
 import member7 from '../assets/people/member-7.png';
 
-
 const Documents = () => {
   const [docs, setDocs] = useState([
     {

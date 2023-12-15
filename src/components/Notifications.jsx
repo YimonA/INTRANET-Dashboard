@@ -1,26 +1,23 @@
-
 import { useState } from "react";
+import member6 from '../assets/people/member-6.png';
 
 const Notifications = () => {
   const [notifications,setNotifications] = useState([
     {
       id: 1,
       title: "Emily send you task to assign",
-      img_url: "./src/assets/people/member-6.png",
       sent_date: "18 Sep 2023",
       sent_time: "11:00 AM",
     },
     {
       id: 2,
       title: "Emily send you task to assign",
-      img_url: "./src/assets/people/member-6.png",
       sent_date: "18 Sep 2023",
       sent_time: "11:00 AM",
     },
     {
       id: 3,
       title: "Emily send you task to assign",
-      img_url: "./src/assets/people/member-6.png",
       sent_date: "18 Sep 2023",
       sent_time: "11:00 AM",
     },
@@ -40,7 +37,7 @@ const Notifications = () => {
               className="border border-[#8C8BC2] flex items-center gap-4 px-3 py-2 rounded-md hover:bg-gray-100"
             >
               <img
-                src={notification?.img_url}
+                src={member6}
                 alt=""
                 className="w-[60px] h-[60px] rounded-full object-cover object-center"
                 loading="lazy"
