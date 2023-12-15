@@ -2,7 +2,7 @@ import AnotherAction from "../components/AnotherAction";
 import Calendar from "../components/Calendar";
 import Documents from "../components/Documents";
 import Members from "../components/Members";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import Notifications from "../components/Notifications";
 import Sidebar from "../components/Sidebar";
 import Tasks from "../components/Tasks";
