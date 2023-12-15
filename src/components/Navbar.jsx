@@ -9,7 +9,7 @@ const Navbar = () => {
   ];
   return (
     <div className="p-3 bg-white flex justify-between items-center">
-      <span className="ps-20 text-[var(--logo-color)] text-3xl font-bold select-none">
+      <span className="ms-20 px-3 text-[var(--logo-color)] text-2xl font-bold select-none hover:bg-gradient-to-r from-indigo-500 from-20% via-indigo-700 via-30% to-indigo-900 to-90% hover:text-white hover:rounded hover:text-3xl duration-500 ease-out">
         INTRANET
       </span>
       <div className="flex flex-col justify-center items-end gap-2 ">
