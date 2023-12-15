@@ -38,11 +38,11 @@
   align-items: center;
 }
 .right-action-width {
-  min-width: calc(100vw - 1340px);
+  min-width: calc(100vw - 1350px);
 }
 .doc-width,
 .noti-width {
-  width: calc((100vw - 745px) / 2);
+  width: calc((100vw - 755px) / 2);
 }
 
 .task-height {
@@ -51,11 +51,11 @@
 
 .doc-height,
 .noti-height {
-  height: calc(100vh - 750px);
+  height: calc(100vh - 735px);
 }
 
 .members-width {
-  width: calc(100vw - 740px);
+  width: calc(100vw - 745px);
 }
 
 * {

@@ -49,11 +49,11 @@ const AnotherAction = () => {
 
   return (
     <div className="flex flex-row justify-start items-stretch gap-3">
-      <div className="w-[425px] 2xl:w-[592px] bg-white px-3 py-2 flex flex-wrap justify-center 2xl:justify-start gap-4">
+      <div className="w-[418px] 2xl:w-[592px] bg-white p-3 flex flex-wrap justify-center items-center 2xl:justify-start gap-4">
         {leftSideActions.map((leftSideAction) => {
           return (
             <button
-              className="w-[115px] h-[100px] 2xl:w-[130px] 2xl:h-[100px] border border-black rounded flex flex-col gap-3 items-center justify-center hover:bg-[#f2f2f7]"
+              className="w-[115px] h-[95px] 2xl:w-[130px] border border-black rounded flex flex-col gap-3 items-center justify-center hover:bg-[#f2f2f7]"
               key={leftSideAction?.id}
             >
               {leftSideAction?.icon}

@@ -14,14 +14,14 @@ const Path = () => {
       <p className="py-3 px-24 mb-0 font-bold text-[var(--secondary-color)]">
         대시보드
       </p>
-      <div className="flex gap-2 pe-3">
+      <div className="flex gap-3 pe-3">
         <Sidebar />
-        <div className="flex flex-col gap-2 h-[var(--min-height)] overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-violet-200">
+        <div className="flex flex-col gap-3 h-[var(--min-height)] overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-violet-200">
           <Calendar/>
           <Tasks />
         </div>
-        <div className="flex flex-col gap-2 h-[var(--min-height)] overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-violet-200">
-          <div className="flex gap-2 ">
+        <div className="flex flex-col gap-3 h-[var(--min-height)] overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-violet-200">
+          <div className="flex gap-3 ">
             <Documents />
             <Notifications />
           </div>

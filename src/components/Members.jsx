@@ -83,7 +83,7 @@ const Members = () => {
                 loading="lazy"
               />
               <p className="text-lg	mb-0 text-center font-medium	">{member?.name}</p>
-              <p className="min-w-[110px] text-center text-[var(--btn-bg-color)] mb-0">{member?.position}</p>
+              <p className="min-w-[120px] text-center text-[var(--btn-bg-color)] mb-0">{member?.position}</p>
             </div>
           );
         })}
