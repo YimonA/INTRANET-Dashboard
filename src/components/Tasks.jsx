@@ -24,7 +24,7 @@ const Tasks = () => {
   ])
 
   return (
-    <div className="min-w-[300px] bg-white">
+    <div className="w-[400px] bg-white">
       <div className="flex justify-between items-center py-2 px-3 border-b-2 border-b-black">
         <p className="font-medium text-xl mb-0">Task to do</p>
         <button className="purple-btn">See All</button>

@@ -49,7 +49,7 @@ const AnotherAction = () => {
 
   return (
     <div className="flex flex-row justify-start items-stretch gap-3">
-      <div className="w-[410px] 2xl:w-[592px] bg-white p-3 flex flex-wrap justify-start gap-4">
+      <div className="w-[425px] 2xl:w-[592px] bg-white px-3 py-2 flex flex-wrap justify-center 2xl:justify-start gap-4">
         {leftSideActions.map((leftSideAction) => {
           return (
             <button

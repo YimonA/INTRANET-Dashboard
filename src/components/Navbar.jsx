@@ -9,10 +9,10 @@ const Navbar = () => {
   ];
   return (
     <div className="p-3 bg-white flex justify-between items-center">
-      <span className="ms-20 px-3 text-[var(--logo-color)] text-2xl font-bold select-none hover:bg-gradient-to-r from-indigo-500 from-20% via-indigo-700 via-30% to-indigo-900 to-90% hover:text-white hover:rounded hover:text-3xl duration-500 ease-out">
+      <span className="ms-10 px-3 text-[var(--logo-color)] text-2xl font-bold select-none hover:bg-gradient-to-r from-indigo-500 from-20% via-indigo-700 via-30% to-indigo-900 to-90% hover:text-white hover:rounded hover:text-3xl duration-500 ease-out">
         INTRANET
       </span>
-      <div className="flex flex-col justify-center items-end gap-2 ">
+      <div className="flex flex-col justify-center items-end gap-2 pe-3 ">
         <div className="flex gap-6 items-center">
           <span>관리자님! 환영합니다.</span>
           <div className="flex gap-3">

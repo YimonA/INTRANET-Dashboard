@@ -37,13 +37,12 @@
   justify-content: center;
   align-items: center;
 }
-
 .right-action-width {
-  min-width: calc(100vw - 1350px);
+  min-width: calc(100vw - 1340px);
 }
 .doc-width,
 .noti-width {
-  width: calc((100vw - 755px) / 2);
+  width: calc((100vw - 745px) / 2);
 }
 
 .task-height {
@@ -52,11 +51,11 @@
 
 .doc-height,
 .noti-height {
-  height: calc(100vh - 740px);
+  height: calc(100vh - 750px);
 }
 
 .members-width {
-  width: calc(100vw - 750px);
+  width: calc(100vw - 740px);
 }
 
 * {
@@ -76,18 +75,6 @@ body {
 .fc-day-today {
   background-color: #5554e9;
 }
-/* 
-input[type="checkbox"] {
-  background: #eee;
-}
-
-input[type="checkbox"]:checked {
-  background-color: red;
-}
-
-.option-input:checked::after {
-  background-color: var(--btn-bg-color);
-} */
 
 @layer components {
   .purple-btn {
