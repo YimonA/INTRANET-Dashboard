@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Istok+Web&family=Poppins:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gray-color: #e7e0f0;
+  --gray-font: #6a6969;
+  --base-color: #e5e5fc;
+  --font-color: #a2a1d0;
+  --logo-color: #625be8;
+  --btn-bg-color: #5a56e9;
+  --btn-hover-color: #4842ed;
+  --task-list-color: #635eea;
+  --secondary-color: #5554e9;
+  --logo-font: "Istok Web", sans-serif;
+  --base-font: "Inter", serif;
+  --min-height: calc(100vh - 160px);
+  --fc-button-bg-color: #fff;
+  --fc-button-border-color: #1b2626;
+  --fc-button-text-color: #000;
+  --fc-today-bg-color: #f74646;
+  --fc-button-border-color: gray;
+  --fc-event-border-color: "";
+  --fc-button-hover-bg-color: gainsboro;
+  --fc-button-active-bg-color: rgb(196, 195, 195);
+  --fc-button-active-border-color:'';
+  --fc-button-hover-border-color:'';
+}
+
+.fc .fc-button {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-action-width {
+  min-width: calc(100vw - 1350px);
+}
+.doc-width,
+.noti-width {
+  width: calc((100vw - 755px) / 2);
+}
+
+.task-height {
+  height: calc(100vh - 850px);
+}
+
+.doc-height,
+.noti-height {
+  height: calc(100vh - 740px);
+}
+
+.members-width {
+  width: calc(100vw - 750px);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: var(--base-font);
+}
+
+.fc-day-today {
+  background-color: #5554e9;
+}
+/* 
+input[type="checkbox"] {
+  background: #eee;
+}
+
+input[type="checkbox"]:checked {
+  background-color: red;
+}
+
+.option-input:checked::after {
+  background-color: var(--btn-bg-color);
+} */
+
+@layer components {
+  .purple-btn {
+    @apply text-white px-3 py-2 rounded bg-[var(--btn-bg-color)] hover:bg-[var(--btn-hover-color)];
+  }
+}
