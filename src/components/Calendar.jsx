@@ -91,7 +91,7 @@ const Calendar = () => {
           {names?.map((name, index) => {
             return (
               <div key={index} className="flex justify-end items-center gap-2 ">
-                <span>{name?.title}</span>
+                <span className="text-[#9FA9B2]">{name?.title}</span>
                 <span
                   className={` w-[10px] h-[10px] rounded-full ${name?.color}`}
                 ></span>

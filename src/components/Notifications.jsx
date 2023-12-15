@@ -6,21 +6,21 @@ const Notifications = () => {
     {
       id: 1,
       title: "Emily send you task to assign",
-      img_url: "/src/assets/people/member-6.png",
+      img_url: "../src/assets/people/member-6.png",
       sent_date: "18 Sep 2023",
       sent_time: "11:00 AM",
     },
     {
       id: 2,
       title: "Emily send you task to assign",
-      img_url: "/src/assets/people/member-6.png",
+      img_url: "../src/assets/people/member-6.png",
       sent_date: "18 Sep 2023",
       sent_time: "11:00 AM",
     },
     {
       id: 3,
       title: "Emily send you task to assign",
-      img_url: "/src/assets/people/member-6.png",
+      img_url: "../src/assets/people/member-6.png",
       sent_date: "18 Sep 2023",
       sent_time: "11:00 AM",
     },
@@ -33,7 +33,7 @@ const Notifications = () => {
         <button className="purple-btn">See All</button>
       </div>
       <div className="flex flex-col gap-3 p-3 ps-5 noti-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
-        {notifications.map((notification) => {
+        {notifications?.map((notification) => {
           return (
             <div
               key={notification?.id}
@@ -43,6 +43,7 @@ const Notifications = () => {
                 src={notification?.img_url}
                 alt=""
                 className="w-[60px] h-[60px] rounded-full object-cover object-center"
+                loading="lazy"
               />
               <div className="text-[var(--secondary-color)]">
                 <p className="">{notification?.title}</p>

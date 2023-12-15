@@ -6,7 +6,7 @@ const Documents = () => {
       id: 1,
       doc_name: "Work Flow Explain",
       submitted_by: "By Jassi",
-      img_url: "/src/assets/people/member-7.png",
+      img_url: "../src/assets/people/member-7.png",
       submitted_date: "19 Sep 2023",
       submitted_time: "11:00 AM",
     },
@@ -14,7 +14,7 @@ const Documents = () => {
       id: 2,
       doc_name: "Work Flow Explain",
       submitted_by: "By Jassi",
-      img_url: "/src/assets/people/member-7.png",
+      img_url: "../src/assets/people/member-7.png",
       submitted_date: "19 Sep 2023",
       submitted_time: "11:00 AM",
     },
@@ -22,7 +22,7 @@ const Documents = () => {
       id: 3,
       doc_name: "Work Flow Explain",
       submitted_by: "By Jassi",
-      img_url: "/src/assets/people/member-7.png",
+      img_url: "../src/assets/people/member-7.png",
       submitted_date: "19 Sep 2023",
       submitted_time: "11:00 AM",
     },
@@ -30,7 +30,7 @@ const Documents = () => {
       id: 4,
       doc_name: "Work Flow Explain",
       submitted_by: "By Jassi",
-      img_url: "/src/assets/people/member-7.png",
+      img_url: "../src/assets/people/member-7.png",
       submitted_date: "19 Sep 2023",
       submitted_time: "11:00 AM",
     },
@@ -38,7 +38,7 @@ const Documents = () => {
       id: 5,
       doc_name: "Work Flow Explain",
       submitted_by: "By Jassi",
-      img_url: "/src/assets/people/member-7.png",
+      img_url: "../src/assets/people/member-7.png",
       submitted_date: "19 Sep 2023",
       submitted_time: "11:00 AM",
     },
@@ -56,17 +56,19 @@ const Documents = () => {
             <div
               key={doc?.id}
               className="border border-[var-(--gray-color)] flex justify-between items-center gap-4 px-3 py-2 rounded-md hover:bg-gray-100"
-            >
+            ><div className="flex justify-start items-center gap-3">
               <img
                 src={`${doc?.img_url}`}
                 alt=""
                 className="w-[50px] h-[50px] rounded-full object-cover object-center"
+                loading="lazy"
               />
               <div>
-                <p className="">{doc?.doc_name}</p>
+                <p className="font-medium	">{doc?.doc_name}</p>
                 <p className="mb-0 text-[var(--gray-font)] text-sm">
                   {doc?.submitted_by}
                 </p>
+              </div>
               </div>
               <div>
                 <p className="text-sm	text-[var(--btn-bg-color)] text-center">

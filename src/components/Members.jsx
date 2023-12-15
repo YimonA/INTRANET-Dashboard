@@ -5,55 +5,55 @@ const Members = () => {
     {
       id: 1,
       name: "Emily",
-      img_url: "/src/assets/people/member-1.png",
+      img_url: "../src/assets/people/member-6.png",
       position: "Project Leader",
     },
     {
       id: 2,
       name: "Johnny",
-      img_url: "/src/assets/people/member-2.png",
+      img_url: "../src/assets/people/member-1.png",
       position: "Data Collector",
     },
     {
       id: 3,
       name: "Grace",
-      img_url: "/src/assets/people/member-3.png",
+      img_url: "../src/assets/people/member-2.png",
       position: "Researcher",
     },
     {
       id: 4,
       name: "Author",
-      img_url: "/src/assets/people/member-4.png",
+      img_url: "../src/assets/people/member-3.png",
       position: "UI Designer",
     },
     {
       id: 5,
       name: "Julie",
-      img_url: "/src/assets/people/member-5.png",
+      img_url: "../src/assets/people/member-4.png",
       position: "UI Designer",
     },
     {
       id: 6,
       name: "Auston",
-      img_url: "/src/assets/people/member-6.png",
+      img_url: "../src/assets/people/member-5.png",
       position: "UI Designer",
     },
     {
       id: 7,
       name: "Auston",
-      img_url: "/src/assets/people/member-7.png",
+      img_url: "../src/assets/people/member-5.png",
       position: "UI Designer",
     },
     {
       id: 8,
       name: "Auston",
-      img_url: "/src/assets/people/member-7.png",
+      img_url: "../src/assets/people/member-5.png",
       position: "UI Designer",
     },
     {
       id: 9,
       name: "Auston",
-      img_url: "/src/assets/people/member-7.png",
+      img_url: "../src/assets/people/member-5.png",
       position: "UI Designer",
     },
   ]);
@@ -74,8 +74,9 @@ const Members = () => {
                 src={member?.img_url}
                 alt=""
                 className={`w-[70px] h-[70px] 2xl:w-[80px] 2xl:h-[80px] rounded-full object-cover object-center`}
+                loading="lazy"
               />
-              <p className="text-lg	mb-0 text-center">{member?.name}</p>
+              <p className="text-lg	mb-0 text-center font-medium	">{member?.name}</p>
               <p className="min-w-[110px] text-center text-[var(--btn-bg-color)] mb-0">{member?.position}</p>
             </div>
           );
