@@ -55,7 +55,7 @@ const Tasks = () => {
           type="text"
           className="w-full h-[40px] px-2 border border-e-0 focus:border-e-0 border-gray-400 rounded-s-md rounded-e-none focus:rounded-e-none focus:border-gray-400 focus:outline-gray-400"
         />
-        <button className="text-white px-3 py-2 bg-[var(--btn-bg-color)] border rounded-e-md min-w-[78px] hover:bg-[var(--btn-hover-color)]">
+        <button className="text-white px-3 py-2 bg-[var(--btn-bg-color)] border rounded-e-md min-w-[78px] hover:bg-indigo-800">
           Search
         </button>
       </div>

@@ -74,7 +74,7 @@ const Members = () => {
           return (
             <div
               key={member?.id}
-              className="flex flex-col justify-between items-center gap-1 px-3 py-1"
+              className="flex flex-col justify-between items-center gap-1 2xl:gap-0 px-3 py-1"
             >
               <img
                 src={member?.img_url}

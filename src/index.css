@@ -1,6 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Istok+Web&family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Istok+Web&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Istok+Web&family=Poppins:wght@300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,7 +16,6 @@
   --secondary-color: #5554e9;
   --logo-font: "Istok Web", sans-serif;
   --base-font: "Inter", sans-serif;
-  --korean-font: "Noto Sans Korean", sans-serif;
   --min-height: calc(100vh - 160px);
   --fc-button-bg-color: #fff;
   --fc-button-border-color: #1b2626;
@@ -45,11 +42,6 @@ body {
   line-height: 24px;
   font-family: var(--base-font);
 }
-.k-font{
-  font-family: var(--korean-font);
-  font-weight: 900;
-}
-
 .overflow-y-scroll {
   overflow-y: auto !important;
 }
@@ -86,9 +78,22 @@ body {
 .fc-day-today {
   background-color: #5554e9;
 }
+.K-Medium{
+font-family: "noto-sans-cjk-kr", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+.K-Bold{
+font-family: "noto-sans-cjk-kr", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+input[type=checkbox] {
+  accent-color: var(--secondary-color);
+}
 
 @layer components {
   .purple-btn {
-    @apply text-white px-3 py-2 rounded bg-[var(--btn-bg-color)] hover:bg-[var(--btn-hover-color)];
+    @apply text-white px-3 py-2 rounded bg-[var(--btn-bg-color)] hover:bg-indigo-800;
   }
 }

@@ -1,6 +1,3 @@
-import { TfiYoutube } from "react-icons/tfi";
-import { TfiMapAlt } from "react-icons/tfi";
-import { PiPlusCircleFill } from "react-icons/pi";
 import achievements from "../assets/icons/achievements.svg";
 import blogs from "../assets/icons/blogs.svg";
 import share from "../assets/icons/share.svg";

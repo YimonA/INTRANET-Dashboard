@@ -14,13 +14,13 @@ const Navbar = () => {
       </span>
       <div className="flex flex-col justify-center items-end gap-2 pe-3 ">
         <div className="flex gap-6 items-center">
-          <span className="text-[20px] font-black">관리자님! 환영합니다.</span>
+          <span className="K-Medium text-xl">관리자님! 환영합니다.</span>
           <div className="flex gap-3">
             {purpleBtns.map((purpleBtn, index) => {
               return (
                 <button
                   key={index}
-                  className="px-3.5 py-2 bg-[var(--btn-bg-color)] text-white rounded-md	text-[20px]	font-black hover:bg-[var(--btn-hover-color)] "
+                  className="px-3.5 py-2 bg-[var(--btn-bg-color)] text-white rounded-md	K-Medium text-xl hover:bg-indigo-800 "
                 >
                   {purpleBtn}
                 </button>
@@ -33,7 +33,7 @@ const Navbar = () => {
             return (
               <button
                 key={index}
-                className="px-3.5 py-2 text-black border border-black text-[20px]	font-black rounded hover:bg-[#f2f2f7]"
+                className="px-3.5 py-2 text-black border border-black K-Medium text-xl rounded hover:bg-[#f2f2f7]"
               >
                 {basisBtn}
               </button>
