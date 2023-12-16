@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Istok+Web&family=Poppins:wght@300;400;500&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Istok+Web&family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Istok+Web&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +17,8 @@
   --task-list-color: #635eea;
   --secondary-color: #5554e9;
   --logo-font: "Istok Web", sans-serif;
-  --base-font: "Inter", serif;
+  --base-font: "Inter", sans-serif;
+  --korean-font: "Noto Sans Korean", sans-serif;
   --min-height: calc(100vh - 160px);
   --fc-button-bg-color: #fff;
   --fc-button-border-color: #1b2626;
@@ -27,35 +30,6 @@
   --fc-button-active-bg-color: rgb(196, 195, 195);
   --fc-button-active-border-color:'';
   --fc-button-hover-border-color:'';
-}
-
-.fc .fc-button {
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.right-action-width {
-  min-width: calc(100vw - 1350px);
-}
-.doc-width,
-.noti-width {
-  width: calc((100vw - 755px) / 2);
-}
-
-.task-height {
-  height: calc(100vh - 850px);
-}
-
-.doc-height,
-.noti-height {
-  height: calc(100vh - 735px);
-}
-
-.members-width {
-  width: calc(100vw - 745px);
 }
 
 * {
@@ -70,6 +44,43 @@ body {
   font-weight: 400;
   line-height: 24px;
   font-family: var(--base-font);
+}
+.k-font{
+  font-family: var(--korean-font);
+  font-weight: 900;
+}
+
+.overflow-y-scroll {
+  overflow-y: auto !important;
+}
+
+.fc .fc-button {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-action-width {
+  min-width: calc(100vw - 1140px);
+}
+.doc-width,
+.noti-width {
+  width: calc((100vw - 715px) / 2);
+}
+
+.task-height {
+  height: calc(100vh - 860px);
+}
+
+.doc-height,
+.noti-height {
+  height: calc(100vh - 800px);
+}
+
+.members-width {
+  width: calc(100vw - 703px);
 }
 
 .fc-day-today {

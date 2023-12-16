@@ -24,12 +24,12 @@ const Notifications = () => {
   ]);
 
   return (
-    <div className="noti-width bg-white">
+    <div className="noti-width bg-white h-[562px] 2xl:h-[540px]">
       <div className="flex justify-between items-center py-2 px-3 ">
         <p className="font-medium text-xl mb-0">Notifications</p>
         <button className="purple-btn">See All</button>
       </div>
-      <div className="flex flex-col gap-3 p-3 ps-5 noti-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
+      <div className="flex flex-col gap-3 p-3 min-h-[490px] noti-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
         {notifications?.map((notification) => {
           return (
             <div

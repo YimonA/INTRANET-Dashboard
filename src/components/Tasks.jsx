@@ -24,12 +24,12 @@ const Tasks = () => {
   ])
 
   return (
-    <div className="w-[400px] bg-white">
+    <div className="w-[360px] bg-white min-h-[460px]">
       <div className="flex justify-between items-center py-2 px-3 border-b-2 border-b-black">
         <p className="font-medium text-xl mb-0">Task to do</p>
         <button className="purple-btn">See All</button>
       </div>
-      <div className="flex flex-col gap-3 p-3 task-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
+      <div className="flex flex-col gap-3 p-3 min-h-[340px] task-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
         {tasks.map((task) => {
           return (
             <div

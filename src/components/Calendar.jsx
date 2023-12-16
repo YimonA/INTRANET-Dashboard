@@ -79,8 +79,8 @@ const Calendar = () => {
   ];
 
   return (
-    <div className="w-[400px] bg-white ps-3 pe-4">
-      <div className="flex justify-between items-start py-3">
+    <div className="w-[360px] bg-white ps-3 pe-4 py-3">
+      <div className="flex justify-between items-start pb-3">
         <div className="text-[#1B2126] flex flex-col gap-3">
           <span className="text-sm">Calendar</span>
           <span className="text-2xl font-semibold border-b-4 border-b-[#5490E9]">

@@ -49,11 +49,11 @@ const AnotherAction = () => {
 
   return (
     <div className="flex flex-row justify-start items-stretch gap-3">
-      <div className="w-[418px] 2xl:w-[592px] bg-white p-3 flex flex-wrap justify-center items-center 2xl:justify-start gap-4">
+      <div className="w-[428px] min-h-[200px] bg-white p-3 flex flex-wrap items-center justify-start gap-2">
         {leftSideActions.map((leftSideAction) => {
           return (
             <button
-              className="w-[115px] h-[95px] 2xl:w-[130px] border border-black rounded flex flex-col gap-3 items-center justify-center hover:bg-[#f2f2f7]"
+              className="w-[95px] h-[95px] border border-black rounded flex flex-col gap-2 items-center justify-center hover:bg-[#f2f2f7]"
               key={leftSideAction?.id}
             >
               {leftSideAction?.icon}
@@ -62,8 +62,8 @@ const AnotherAction = () => {
           );
         })}
       </div>
-      <div className=" flex flex-col gap-3 right-action-width">
-        <div className={`h-[112px] flex justify-between items-stretch gap-2`}>
+      <div className=" flex flex-col gap-3">
+        <div className={`right-action-width h-[112px] flex justify-between items-stretch gap-2`}>
           <button
             className={`basis-1/2 bg-[#A2A1D0] hover:bg-[#8f8ec1] flex flex-col justify-center items-center gap-3`}
           >
@@ -77,7 +77,7 @@ const AnotherAction = () => {
             <p className="font-medium min-w-[90px] text-sm 2xl:text-xl text-center">Help Center</p>
           </button>
         </div>
-        <div className="h-[112px] flex justify-between items-stretch gap-2">
+        <div className="right-action-width h-[112px] flex justify-between items-stretch gap-2">
           <button
             className={`basis-1/2 bg-[#D6301B] hover:bg-[#d42a13c7] flex flex-col justify-center items-center gap-3`}
           >

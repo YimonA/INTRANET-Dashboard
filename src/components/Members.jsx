@@ -69,12 +69,12 @@ const Members = () => {
         <p className="font-medium text-xl mb-0">Team Members</p>
         <button className="purple-btn ">See All</button>
       </div>
-      <div className="flex gap-3 p-3 members-width overflow-x-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
+      <div className="flex gap-2 px-3 py-2 members-width overflow-x-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
         {members.map((member) => {
           return (
             <div
               key={member?.id}
-              className="flex flex-col justify-between items-center gap-1 2xl:gap-2 px-3 py-2 rounded-md"
+              className="flex flex-col justify-between items-center gap-1 px-3 py-1"
             >
               <img
                 src={member?.img_url}

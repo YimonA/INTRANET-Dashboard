@@ -41,12 +41,12 @@ const Documents = () => {
   ]);
   
   return (
-    <div className="doc-width bg-white">
+    <div className="doc-width bg-white h-[562px] 2xl:h-[540px]">
       <div className="flex justify-between items-center py-2 px-3 ">
         <p className="font-medium text-xl mb-0">Documents</p>
         <button className="purple-btn">See All</button>
       </div>
-      <div className="flex flex-col gap-3 p-3 doc-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
+      <div className="flex flex-col gap-3 p-3 min-h-[490px] doc-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
         {docs.map((doc) => {
           return (
             <div
