@@ -1,5 +1,7 @@
 import { useState } from "react";
 import member6 from '../assets/people/member-6.png';
+import {PiNotePencil} from "react-icons/pi"
+import {PiTrash} from "react-icons/pi"
 
 const Notifications = () => {
   const [notifications,setNotifications] = useState([
@@ -34,8 +36,9 @@ const Notifications = () => {
           return (
             <div
               key={notification?.id}
-              className="border border-[#8C8BC2] flex items-center gap-4 px-3 py-2 rounded-md hover:bg-gray-100"
+              className="border border-[#8C8BC2] flex justify-between  items-center gap-4 px-3 py-2 rounded-md hover:bg-gray-100"
             >
+              <div className="flex items-center gap-4">
               <img
                 src={member6}
                 alt=""
@@ -47,9 +50,10 @@ const Notifications = () => {
                 <p className="text-xs">{notification?.sent_date}</p>
                 <p className="mb-0 text-xs ">{notification?.sent_time}</p>
               </div>
-              <div className="flex flex-col gap-2">
-                {/* <button className="flex justify-center items-center p-2"><PiNotePencil/> </button>
-              <button className="flex justify-center items-center p-2"><PiNotePencil/> </button> */}
+              </div>
+              <div className="flex flex-col justify-center items-center gap-2">
+                <button className="flex justify-center items-center p-2 hover:bg-indigo-100 rounded"><PiNotePencil className="text-indigo-500" size={'1.3rem'}/> </button>
+              <button className="flex justify-center items-center p-2 hover:bg-red-100 rounded"><PiTrash className="text-red-500" size={'1.3rem'}/> </button>
               </div>
             </div>
           );
