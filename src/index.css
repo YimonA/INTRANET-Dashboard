@@ -96,4 +96,7 @@ input[type=checkbox] {
   .purple-btn {
     @apply text-white px-3 py-2 rounded bg-[var(--btn-bg-color)] hover:bg-indigo-800;
   }
+  .purple-outline-btn {
+    @apply text-[var(--btn-bg-color)] px-3 py-2 rounded bg-white hover:bg-gray-200 border border-[var(--btn-bg-color)];
+  }
 }

@@ -46,7 +46,7 @@ const Documents = () => {
         <p className="font-medium text-xl mb-0">Documents</p>
         <button className="purple-btn">See All</button>
       </div>
-      <div className=" flex flex-col gap-3 p-3 min-h-[507px] doc-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
+      <div className=" flex flex-col gap-3 p-3 min-h-[507px] doc-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white ">
         {docs.map((doc) => {
           return (
             <div

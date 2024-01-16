@@ -15,7 +15,7 @@ const Sidebar = () => {
           return (
             <li
               key={index}
-              className=" ps-16 pe-3.5 py-5 text-[var(--font-color)] cursor-pointer hover:text-[var(--btn-hover-color)]"
+              className=" ps-16 pe-3.5 py-5 text-[var(--font-color)] cursor-pointer hover:text-[var(--btn-hover-color)] transition duration-300"
             >
               <p className="K-Bold text-xl">
               {sideList}</p>

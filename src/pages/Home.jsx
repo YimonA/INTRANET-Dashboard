@@ -16,23 +16,23 @@ const Home = () => {
       </p>
       <div className="flex gap-3 h-[var(--min-height)] ">
         <Sidebar />
-        <div className="flex gap-3 h-[var(--min-height)] overflow-y-scroll scrollbar scrollbar-thumb-violet-500 scrollbar-track-violet-200">
-        <div className="flex flex-col gap-3 justify-between h-full">
-          <Calendar/>
-          <Tasks />
-        </div>
-        <div className="flex flex-col gap-3 ">
-          <div className="flex gap-3 ">
-            <Documents />
-            <Notifications />
+        <div className="flex gap-3 h-[var(--min-height)] overflow-y-scroll scrollbar scrollbar-thumb-violet-500 scrollbar-track-violet-200 ">
+          <div className="flex flex-col gap-3 justify-between h-full">
+            <Calendar />
+            <Tasks />
           </div>
-          <Members />
-          <AnotherAction />
-        </div>
+          <div className="flex flex-col gap-3 ">
+            <div className="flex gap-3 ">
+              <Documents />
+              <Notifications />
+            </div>
+            <Members />
+            <AnotherAction />
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

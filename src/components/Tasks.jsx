@@ -7,21 +7,33 @@ const Tasks = () => {
   },
   {
     id:2,
-    title:"Working on Tesla Project",
+    title:"Working on Dashboard Project",
   },
   {
     id:3,
-    title:"Working on Tesla Project",
+    title:"Working on Company Website Project",
   },
   {
     id:4,
-    title:"Working on Tesla Project",
+    title:"Working on E-commerce Project",
   },
   {
     id:5,
     title:"Working on Tesla Project",
   },
   ])
+  const [search,setSearch]=useState("");
+
+  const rows = tasks
+    ?.filter((task) => {
+      if (search === "") {
+        return task;
+      } else if (
+        task?.title.toLowerCase().includes(search?.toLocaleLowerCase())
+      ) {
+        return tasks;
+      }
+    });
 
   return (
     <div className="w-[360px] bg-white min-h-[460px]">
@@ -30,7 +42,7 @@ const Tasks = () => {
         <button className="purple-btn">See All</button>
       </div>
       <div className="flex flex-col gap-3 p-3 min-h-[340px] task-height overflow-y-scroll scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-white">
-        {tasks.map((task) => {
+        {rows?.map((task) => {
           return (
             <div
               key={task.id}
@@ -53,6 +65,8 @@ const Tasks = () => {
       <div className="flex p-3 gap-0 justify-normal items-center">
         <input
           type="text"
+          value={search}
+          onChange={(e)=>setSearch(e.target.value)}
           className="w-full h-[40px] px-2 border border-e-0 focus:border-e-0 border-gray-400 rounded-s-md rounded-e-none focus:rounded-e-none focus:border-gray-400 focus:outline-gray-400"
         />
         <button className="text-white px-3 py-2 bg-[var(--btn-bg-color)] border rounded-e-md min-w-[78px] hover:bg-indigo-800">
